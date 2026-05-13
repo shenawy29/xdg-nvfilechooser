@@ -287,7 +287,7 @@ mod tests {
     #[test]
     fn test_value_to_lua_fallback() {
         let v = Value::F64(consts::PI);
-        assert_eq!(value_to_lua("k", &v), "k = '3.14'");
+        assert_eq!(value_to_lua("k", &v), "k = '3.141592653589793'");
     }
 
     #[test]
